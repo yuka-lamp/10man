@@ -1,13 +1,25 @@
-/*--------------------------------------レイアウト*/
+/*--------------------------------------------------
+レイアウト
+--------------------------------------------------*/
 .wrap {
   box-sizing: border-box;
   margin: 0 auto;
   width: 1000px
 }
 
+.pc-only {
+  display: block
+}
+
+.sp-only {
+  display: none !important
+}
+
 .flex {
   display: flex;
   justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
 }
 
 .pc-flex {
@@ -29,14 +41,6 @@
   padding: 80px 0
 }
 
-.pc-only {
-  display: block !important
-}
-
-.sp-only {
-  display: none !important
-}
-
 .txt-l {
   text-align: left
 }
@@ -47,6 +51,15 @@
 
 .txt-c {
   text-align: center
+}
+
+a {
+  color: #000
+}
+
+ul {
+  list-style: none !important;
+  margin: 0
 }
 
 @media(max-width:1025px) {
@@ -72,9 +85,16 @@
   .sp-only {
     display: block !important
   }
+
+  .wrap {
+    padding: 0 15px;
+    width: 100%
+  }
 }
 
-/*--------------------------------------文字装飾*/
+/*--------------------------------------------------
+文字装飾
+--------------------------------------------------*/
 .b {
   font-weight: bold !important
 }
@@ -103,7 +123,15 @@
   text-transform: uppercase;
 }
 
-/*--------------------------------------余白*/
+h3 {
+  font-size: 1rem !important;
+  font-weight: bold !important;
+  letter-spacing: .1rem
+}
+
+/*--------------------------------------------------
+余白
+--------------------------------------------------*/
 .p-0 {
   padding: 0 !important
 }
@@ -290,4 +318,242 @@
 
 .ml-05 {
   margin-left: .5rem
+}
+
+/*--------------------------------------------------
+文字装飾
+--------------------------------------------------*/
+/*---ボタン01---*/
+.btn-01 {
+  background: #D73A49;
+  border-radius: 10px;
+  border: 3px solid #000;
+  border-bottom: 5px solid #000;
+  transition: .5s
+}
+
+.btn-01 a {
+  display: block;
+  padding: 1rem .8rem;
+  color: #fff;
+  font-weight: bold;
+}
+
+.btn-01:hover {
+  border-bottom: 3px solid #000;
+}
+
+.btn-01 a:hover {
+  color: #fff;
+  text-decoration: none;
+}
+
+.btn-01 svg {
+  margin-left: .3rem;
+  display: inline-block;
+}
+
+/*---ボタン01終わり---*/
+/*---ボタン02---*/
+.btn-02 {
+  background: #EA7A45;
+  border-radius: 30px;
+  transition: .5s
+}
+
+.btn-02 a {
+  display: block;
+  padding: .4rem 1.2rem;
+  color: #fff;
+  font-weight: bold;
+  font-size: .9rem;
+  letter-spacing: .1rem
+}
+
+.btn-02:hover {
+  background: #000
+}
+
+.btn-02 a:hover {
+  color: #fff;
+  text-decoration: none;
+}
+
+.btn-02 svg {
+  margin-left: .8rem;
+  display: inline-block;
+}
+
+/*---ボタン02終わり---*/
+/*--------------------------------------------------
+よくつかう
+--------------------------------------------------*/
+/*--- こだわり検索 ---*/
+.prejudice-list {
+  margin: 0 0 2rem 0 !important;
+  padding: 0 !important
+}
+
+.prejudice-list li {
+  width: 32%;
+}
+
+.prejudice-list li a {
+  display: block;
+}
+
+.prejudice-list li {
+  border-radius: 10px;
+  border: 3px solid #000;
+  transition: .5s
+}
+
+.prejudice-list li p {
+  padding: 1rem;
+  text-align: center;
+  color: #000;
+  background: #EE9B4B;
+  border-radius: 8px 8px 0 0;
+  margin: 0;
+  font-weight: bold;
+  letter-spacing: .1rem
+}
+
+.prejudice-list li:nth-child(2) p {
+  background: #EA7A45;
+}
+
+.prejudice-list li:nth-child(3) p {
+  background: #F0AE4E;
+}
+
+.prejudice-list li div {
+  padding: .5rem;
+  text-align: center;
+  color: #000;
+}
+
+.prejudice-list li div svg {
+  font-size: 1.5rem
+}
+
+/*-- ホバー --*/
+.prejudice-list li:hover {
+  opacity: .6
+}
+
+.prejudice-list li:hover a {
+  text-decoration: none !important
+}
+
+/*-- ホバー終了 --*/
+@media(max-width:1025px) {
+  /*--スマホよこ--*/
+}
+
+@media(max-width:480px) {
+  .prejudice-list li {
+    width: 100%;
+  }
+
+  .prejudice-list li a {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+  }
+
+  .prejudice-list li a p {
+    width: 80%;
+  }
+
+  .prejudice-list li a div {
+    width: 20%;
+  }
+
+  .prejudice-list li p {
+    text-align: left;
+    border-radius: 10px 0
+  }
+}
+
+/*--- こだわり検索終わり ---*/
+/*--- エリアから検索 ---*/
+.area-list {
+  padding: 0 !important;
+  margin: 0 !important;
+  justify-content: flex-start;
+}
+
+.area-list li {
+  width: 24.6%;
+  display: block;
+  background: #FBF85F;
+  border: 3px solid #000;
+  margin-right: .5%;
+  margin-bottom: .5%;
+  transition: .5s
+}
+
+.area-list li:nth-child(4) {
+  margin: 0
+}
+
+.area-list li a {
+  padding: .7rem .5rem;
+  font-size: .9rem;
+  font-weight: bold;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #000
+}
+
+/*-- ホバー --*/
+.area-list li:hover {
+  opacity: .6
+}
+
+.area-list li:hover a {
+  text-decoration: none !important
+}
+
+/*-- ホバー終了 --*/
+@media(max-width:1025px) {
+  /*--スマホよこ--*/
+}
+
+@media(max-width:480px) {
+  .area-list li {
+    width: 100%;
+  }
+}
+
+/*--- エリアから検索終わり ---*/
+/*--------------------------------------------------
+見出し
+--------------------------------------------------*/
+.ttl {
+  margin-bottom: 1rem
+}
+
+.ttl h2 {
+  font-size: 1.6rem !important;
+  font-weight: bold;
+  letter-spacing: .2rem
+}
+
+.ttl h2 svg {
+  color: #EE9B4B;
+  margin-right: 1rem;
+  font-size: 2rem !important;
+}
+
+@media(max-width:1025px) {
+  /*--スマホよこ--*/
+}
+
+@media(max-width:480px) {
+  .area-list li {
+    width: 100%;
+  }
 }

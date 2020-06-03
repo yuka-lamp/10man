@@ -1,0 +1,21 @@
+/*--------------------------------------
+#header
+--------------------------------------*/
+
+#header {
+  width: 100%;
+  padding: .8rem;
+  border-bottom: 5px solid #000
+}
+
+#header .btn-01 {
+  margin-left: 2rem
+}
+
+@media(max-width:1025px) {
+  /*--スマホよこ--*/
+}
+
+@media(max-width:480px) {
+
+}
