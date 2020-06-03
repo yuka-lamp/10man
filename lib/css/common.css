@@ -353,7 +353,6 @@ h3 {
   display: inline-block;
 }
 
-/*---ボタン01終わり---*/
 /*---ボタン02---*/
 .btn-02 {
   background: #EA7A45;
@@ -384,7 +383,20 @@ h3 {
   display: inline-block;
 }
 
-/*---ボタン02終わり---*/
+/*-- レスポンシブ --*/
+@media(max-width:1025px) {
+  /*--スマホよこ--*/
+}
+
+@media(max-width:480px) {
+  .btn-02 a{
+    text-align: center;
+    padding: 1rem 0;
+    width: 100%;
+    margin-top: 1rem
+  }
+}
+
 /*--------------------------------------------------
 よくつかう
 --------------------------------------------------*/
@@ -446,7 +458,7 @@ h3 {
   text-decoration: none !important
 }
 
-/*-- ホバー終了 --*/
+/*-- レスポンシブ --*/
 @media(max-width:1025px) {
   /*--スマホよこ--*/
 }
@@ -454,6 +466,7 @@ h3 {
 @media(max-width:480px) {
   .prejudice-list li {
     width: 100%;
+    margin-bottom: 5px
   }
 
   .prejudice-list li a {
@@ -468,15 +481,17 @@ h3 {
 
   .prejudice-list li a div {
     width: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 
   .prejudice-list li p {
     text-align: left;
-    border-radius: 10px 0
+    border-radius: 8px 0 0 8px
   }
 }
 
-/*--- こだわり検索終わり ---*/
 /*--- エリアから検索 ---*/
 .area-list {
   padding: 0 !important;
@@ -525,10 +540,10 @@ h3 {
 @media(max-width:480px) {
   .area-list li {
     width: 100%;
+    margin-bottom: 5px!important
   }
 }
 
-/*--- エリアから検索終わり ---*/
 /*--------------------------------------------------
 見出し
 --------------------------------------------------*/

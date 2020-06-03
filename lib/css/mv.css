@@ -11,8 +11,12 @@
   background-size: cover;
 }
 
-#mv .left, #mv .right {
-  width: 48%;
+#mv .left {
+  width: 43%
+}
+
+#mv .right {
+  width: 55%;
 }
 
 #mv .left img {
@@ -43,10 +47,34 @@
 @media(max-width:480px) {
   #mv {
     display: block;
-    height: auto
+    height: auto;
+    background: #fff
+  }
+
+  #mv .wrap {
+    padding: 0;
   }
 
   #mv .left, #mv .right {
+    width: 100%;
+  }
+
+  #mv .left {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 300px;
+    background: url('../images/mv/bg_top.png');
+    background-position: center;
+    background-size: cover;
+    padding: 0 15px
+  }
+
+  #mv .right {
+    margin-bottom: 3rem;
+    margin: 2rem 15px;
+    padding: 0;
+    border: none;
     width: 100%;
   }
 }

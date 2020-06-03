@@ -6,7 +6,7 @@ get_header(); ?>
 <div class="wrap">
   <div class="ttl flex">
     <h2><i class="far fa-clock"></i>新着物件</h2>
-    <div class="btn-02">
+    <div class="btn-02 pc-only">
       <a href="#">一覧を見る<i class="fas fa-chevron-right"></i></a>
     </div>
   </div>
@@ -102,14 +102,17 @@ get_header(); ?>
     </li>
     <!--- 物件情報終わり --->
   </ul>
+  <div class="btn-02 sp-only">
+    <a href="#">一覧を見る<i class="fas fa-chevron-right"></i></a>
+  </div>
 </div>
 </section>
 
 <section id="ranking" class="article-list py-5">
 <div class="wrap">
   <div class="ttl flex">
-    <h2><i class="far fa-clock"></i>人気物件情報</h2>
-    <div class="btn-02">
+    <h2><i class="fas fa-star"></i>人気物件情報</h2>
+    <div class="btn-02 pc-only">
       <a href="#">一覧を見る<i class="fas fa-chevron-right"></i></a>
     </div>
   </div>
@@ -160,6 +163,9 @@ get_header(); ?>
     </li>
     <!--- 物件情報終わり --->
   </ul>
+  <div class="btn-02 sp-only">
+    <a href="#">一覧を見る<i class="fas fa-chevron-right"></i></a>
+  </div>
 </div>
 </section>
 
