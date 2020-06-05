@@ -12,10 +12,22 @@
   margin-left: 2rem
 }
 
-@media(max-width:1025px) {
-  /*--スマホよこ--*/
+#header .logo-wrap {
+  width: 100%;
 }
 
-@media(max-width:480px) {
+#header .logo-wrap a {
+  height: 40px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items:center;
+}
+
+#header .logo-wrap a img {
+  height: 40px;
+}
+
+@media(max-width:1025px) {
 
 }

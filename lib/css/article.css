@@ -75,11 +75,6 @@ transition: .5s
 
 /*------- レスポンシブ -------*/
 
-@media(max-width:1025px) {
-  /*--スマホよこ--*/
-
-}
-
 @media(max-width:480px) {
   .article-list ul li{
     width: 100%;

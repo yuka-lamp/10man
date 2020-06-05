@@ -63,10 +63,6 @@ ul {
 }
 
 @media(max-width:1025px) {
-  /*--スマホよこ--*/
-}
-
-@media(max-width:480px) {
 
   /*--スマホたて--*/
   .pc-flex {
@@ -385,10 +381,6 @@ h3 {
 
 /*-- レスポンシブ --*/
 @media(max-width:1025px) {
-  /*--スマホよこ--*/
-}
-
-@media(max-width:480px) {
   .btn-02 a{
     text-align: center;
     padding: 1rem 0;
@@ -459,11 +451,9 @@ h3 {
 }
 
 /*-- レスポンシブ --*/
-@media(max-width:1025px) {
-  /*--スマホよこ--*/
-}
 
-@media(max-width:480px) {
+
+@media(max-width:1025px) {
   .prejudice-list li {
     width: 100%;
     margin-bottom: 5px
@@ -533,11 +523,9 @@ h3 {
 }
 
 /*-- ホバー終了 --*/
-@media(max-width:1025px) {
-  /*--スマホよこ--*/
-}
 
-@media(max-width:480px) {
+
+@media(max-width:1025px) {
   .area-list li {
     width: 100%;
     margin-bottom: 5px!important
@@ -564,10 +552,6 @@ h3 {
 }
 
 @media(max-width:1025px) {
-  /*--スマホよこ--*/
-}
-
-@media(max-width:480px) {
   .area-list li {
     width: 100%;
   }

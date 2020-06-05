@@ -31,11 +31,9 @@
 }
 
 /*-- レスポンシブ --*/
-@media(max-width:1025px) {
-  /*--スマホよこ--*/
-}
 
-@media(max-width:480px) {
+
+@media(max-width:1025px) {
   #ranking ul li::before {
     text-align: left;
   }

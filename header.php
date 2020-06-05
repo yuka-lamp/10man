@@ -26,10 +26,12 @@ $wp_url = get_template_directory_uri(); ?>
   <nav class="wrap">
     <div class="flex">
       <div class="logo-wrap">
-        <img src="<?php echo $wp_url ?>/lib/images/common/header_logo.png" alt="10万円以下ドットコムのロゴ">
+        <a href="<?php echo $home ?>">
+          <img src="<?php echo $wp_url ?>/lib/images/common/header_logo.png" alt="10万円以下ドットコムのロゴ">
+        </a>
       </div>
       <div class="flex pc-only">
-        <img src="<?php echo $wp_url ?>/lib/images/common/header_tel.png" alt="10万円以下ドットコムのロゴ">
+        <img src="<?php echo $wp_url ?>/lib/images/common/header_tel.png" alt="10万円以下ドットコムの電話番号">
         <div class="btn-01">
           <a href="#" target="_blank">資料請求／お問い合わせ<i class="fas fa-arrow-circle-right"></i></a>
         </div>
