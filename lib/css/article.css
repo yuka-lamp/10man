@@ -14,7 +14,8 @@
   margin-bottom: .5rem
 }
 
-.article-list ul li .img-wrap, .article-list ul li .txt-wrap {
+.article-list ul li .img-wrap,
+.article-list ul li .txt-wrap {
   width: 50%;
   height: auto;
 }
@@ -59,18 +60,18 @@ transition: .5s
 }
 
 .article-list ul li .txt-wrap h3 {
-  font-size: .85rem!important;
-  margin-bottom: 1rem
+  font-size: .9rem!important;
+  margin-bottom: 10px
 }
 
 .article-list ul li .txt-wrap p {
   font-size: .75rem;
-  line-height: 1.3rem;
+  line-height: 1.1rem;
 }
 
 .article-list ul li .txt-wrap p.price {
   color: #D73A49;
-  font-size: 1.3rem
+  font-size: 1rem
 }
 
 /*------- レスポンシブ -------*/

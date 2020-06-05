@@ -1,12 +1,27 @@
 /*--------------------------------------------------
 レイアウト
 --------------------------------------------------*/
+/*--- wrap ---*/
+.pc-wrap {
+  width: 1000px;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
 .wrap {
   box-sizing: border-box;
   margin: 0 auto;
-  width: 1000px
 }
 
+#main-wrap {
+  width: 70%;
+}
+
+#side-wrap {
+  width: 27%;
+}
+
+/*--- wrap終了 ---*/
 .pc-only {
   display: block
 }
@@ -35,6 +50,10 @@
   align-items: center;
 }
 
+.flex-start {
+  align-items:flex-start;
+}
+
 .sec {
   position: relative;
   box-sizing: border-box;
@@ -59,12 +78,31 @@ a {
 
 ul {
   list-style: none !important;
-  margin: 0
+  margin: 0;
+  padding: 0
 }
 
 @media(max-width:1025px) {
 
   /*--スマホたて--*/
+  .wrap {
+    padding: 0 15px;
+    width: 100%
+  }
+
+  .pc-wrap {
+    width: 100%
+  }
+
+  #main-wrap {
+    width: 100%;
+  }
+
+  #side-wrap {
+    width: 100%;
+    padding: 0 15px;
+  }
+
   .pc-flex {
     display: block;
   }
@@ -80,11 +118,6 @@ ul {
 
   .sp-only {
     display: block !important
-  }
-
-  .wrap {
-    padding: 0 15px;
-    width: 100%
   }
 }
 
@@ -317,7 +350,7 @@ h3 {
 }
 
 /*--------------------------------------------------
-文字装飾
+ボタン
 --------------------------------------------------*/
 /*---ボタン01---*/
 .btn-01 {
@@ -381,7 +414,7 @@ h3 {
 
 /*-- レスポンシブ --*/
 @media(max-width:1025px) {
-  .btn-02 a{
+  .btn-02 a {
     text-align: center;
     padding: 1rem 0;
     width: 100%;
@@ -451,8 +484,6 @@ h3 {
 }
 
 /*-- レスポンシブ --*/
-
-
 @media(max-width:1025px) {
   .prejudice-list li {
     width: 100%;
@@ -522,13 +553,10 @@ h3 {
   text-decoration: none !important
 }
 
-/*-- ホバー終了 --*/
-
-
 @media(max-width:1025px) {
   .area-list li {
     width: 100%;
-    margin-bottom: 5px!important
+    margin-bottom: 5px !important
   }
 }
 
@@ -542,7 +570,8 @@ h3 {
 .ttl h2 {
   font-size: 1.6rem !important;
   font-weight: bold;
-  letter-spacing: .2rem
+  letter-spacing: .2rem;
+  line-height: 1.4;
 }
 
 .ttl h2 svg {

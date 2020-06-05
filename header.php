@@ -10,6 +10,8 @@ $wp_url = get_template_directory_uri(); ?>
 <link href="<?php echo $wp_url; ?>/lib/css/common.css" rel="stylesheet">
 <link href="<?php echo $wp_url; ?>/lib/css/header.css" rel="stylesheet">
 <link href="<?php echo $wp_url; ?>/lib/css/footer.css" rel="stylesheet">
+<link href="<?php echo $wp_url; ?>/lib/css/sidebar.css" rel="stylesheet">
+<link href="<?php echo $wp_url; ?>/lib/css/sec-content.css" rel="stylesheet">
 <link href="<?php echo $wp_url; ?>/lib/css/mv.css" rel="stylesheet">
 <link href="<?php echo $wp_url; ?>/lib/css/top.css" rel="stylesheet">
 <link href="<?php echo $wp_url; ?>/lib/css/article.css" rel="stylesheet">
@@ -45,7 +47,7 @@ $wp_url = get_template_directory_uri(); ?>
 
 <!-- トップページMV -->
 <section id="mv" class="flex flex-center">
-  <div class="wrap flex">
+  <div class="pc-wrap flex">
     <h2 class="left">
       <img src="<?php echo $wp_url ?>/lib/images/mv/mv_txt.png" alt="名古屋で安い事務所やオフィス、10万円以下の賃貸はお任せ！">
     </h2>
